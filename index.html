@@ -3,76 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Nestory</title>
-  <meta name="description" content="Privacy Policy for Nestory, your home companion app.">
+  <title>Privacy Policy - Nestory</title>
+  <meta name="description" content="Privacy Policy for Nestory, your cozy home companion app.">
   <style>
-    :root { --bg: #f5f7fa; --card: #fff; --text: #2c3e2d; --muted: #5a6b5c; --accent: #7fb069; }
-    * { box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 24px; }
-    .container { max-width: 680px; margin: 0 auto; background: var(--card); padding: 32px; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
-    h1 { font-size: 1.75rem; margin: 0 0 8px; color: var(--text); }
-    .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
-    h2 { font-size: 1.15rem; margin: 24px 0 12px; color: var(--accent); }
-    p, li { margin: 0 0 10px; color: var(--text); }
-    ul { margin: 0 0 16px; padding-left: 24px; }
-    a { color: var(--accent); }
-    footer { margin-top: 32px; padding-top: 20px; border-top: 1px solid #e8e8e8; font-size: 0.9rem; color: var(--muted); }
+    :root{--bg:#f5f7fa;--card:#fff;--text:#2c3e2d;--muted:#5a6b5c;--accent:#7fb069}
+    *{box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;margin:0;padding:24px}
+    .container{max-width:680px;margin:0 auto;background:var(--card);padding:40px 36px;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+    .nav{display:flex;gap:20px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid #e8ede8}
+    .nav a{color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:500}
+    .nav a.active,.nav a:hover{color:var(--accent)}
+    h1{font-size:1.8rem;margin:0 0 6px;color:var(--text)}
+    .updated{color:var(--muted);font-size:.88rem;margin-bottom:24px}
+    h2{font-size:1.1rem;margin:28px 0 10px;color:var(--accent);border-left:3px solid var(--accent);padding-left:10px}
+    p,li{margin:0 0 10px;color:var(--text);font-size:.97rem}
+    ul{margin:0 0 16px;padding-left:22px}
+    a{color:var(--accent)}
+    footer{margin-top:36px;padding-top:20px;border-top:1px solid #e8e8e8;font-size:.88rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy for Nestory</h1>
-    <p class="updated">Last updated: January 2026</p>
+<div class="container">
+  <nav class="nav">
+    <a href="index.html" class="active">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </nav>
 
-    <p>Nestory ("we", "our", or "the app") is a home companion app that helps you manage finances, kitchen inventory, household assets, and reminders. This Privacy Policy explains what information we collect, how we use it, and your rights.</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: March 17, 2026</p>
 
-    <h2>1. Information We Collect</h2>
-    <ul>
-      <li><strong>Account information:</strong> When you sign up, we collect your email address and the name you provide.</li>
-      <li><strong>Finance data:</strong> Transactions you add (amount, category, date, notes).</li>
-      <li><strong>Kitchen data:</strong> Inventory items and shopping list entries you create.</li>
-      <li><strong>Household data:</strong> Assets you register (name, category, condition, dates, notes).</li>
-      <li><strong>Reminders:</strong> Titles, descriptions, due dates, and types you set.</li>
-      <li><strong>Preferences:</strong> Language, currency, and app settings you choose.</li>
-      <li><strong>Household membership:</strong> If you join or create a household, we store your membership and approval status so you can share data with other approved members.</li>
-    </ul>
+  <p>Nestory ("we", "our", or "the app") is a home companion app that helps you manage finances, kitchen inventory, household assets, and reminders. This Privacy Policy explains what personal information we collect, how we use it, and your rights.</p>
 
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>To provide the app’s features (finance, kitchen, household, reminders).</li>
-      <li>To sync your data across your devices when you are signed in.</li>
-      <li>To allow shared access within a household after the owner approves members.</li>
-      <li>We do not sell your personal data to third parties.</li>
-    </ul>
+  <h2>1. Information We Collect</h2>
+  <ul>
+    <li><strong>Account:</strong> Email address and display name you provide when signing up.</li>
+    <li><strong>Finance data:</strong> Transactions you add (amount, category, date, optional notes).</li>
+    <li><strong>Kitchen data:</strong> Inventory items and shopping list entries you create.</li>
+    <li><strong>Household assets:</strong> Items you register (name, category, condition, purchase date, warranty, notes).</li>
+    <li><strong>Reminders:</strong> Titles, descriptions, due dates, and reminder types you set.</li>
+    <li><strong>Preferences:</strong> Language, currency, dark mode, and notification settings.</li>
+    <li><strong>Household membership:</strong> If you join or create a shared household, we store your membership role and approval status.</li>
+    <li><strong>Push notification token:</strong> A device token used solely to deliver your scheduled local reminders. We do not send marketing notifications.</li>
+    <li><strong>Subscription status:</strong> Whether you have an active Nestory Pro subscription, verified via RevenueCat. We never store your payment card details.</li>
+  </ul>
 
-    <h2>3. Data Storage and Security</h2>
-    <p>Your data is stored using <strong>Google Firebase</strong> (Firestore and Authentication). Data is encrypted in transit (HTTPS/TLS) and at rest. Access to your data is restricted by security rules so that only you (and, for shared household data, approved household members) can read or write it.</p>
+  <h2>2. How We Use Your Information</h2>
+  <ul>
+    <li>To provide and sync the app's core features across your devices.</li>
+    <li>To enable household data sharing with members you have approved.</li>
+    <li>To deliver scheduled local reminder notifications on your device.</li>
+    <li>To determine whether to show advertisements. <strong>Free users see banner ads; Nestory Pro subscribers never see ads.</strong></li>
+    <li>To verify and manage your Pro subscription through RevenueCat.</li>
+    <li>We do not sell, rent, or trade your personal data to any third party.</li>
+  </ul>
 
-    <h2>4. Third-Party Services</h2>
-    <p>We use:</p>
-    <ul>
-      <li><strong>Firebase (Google)</strong> for authentication and database storage. Google’s privacy practices apply to the processing of data by Firebase: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
-    </ul>
+  <h2>3. Data Storage and Security</h2>
+  <p>Your data is stored in <strong>Google Firebase</strong> (Firestore database and Firebase Authentication). All data is encrypted in transit via HTTPS/TLS and encrypted at rest. Firestore security rules ensure that only you and approved household members can access your data.</p>
 
-    <h2>5. Your Rights</h2>
-    <ul>
-      <li>You can delete your account and data by signing out and ceasing use, or by contacting us to request deletion.</li>
-      <li>You can manage or leave a household from the app’s Settings.</li>
-      <li>You can change your preferences (e.g. language, currency) at any time in the app.</li>
-    </ul>
+  <h2>4. Advertising (Free Users)</h2>
+  <p>Free users see banner advertisements delivered by <strong>Google AdMob</strong>. AdMob may use device identifiers and, where consent is given, advertising IDs to serve relevant ads. You can opt out of personalised advertising in your device settings (iOS: Settings &rarr; Privacy &amp; Security &rarr; Tracking). <strong>Nestory Pro subscribers see no advertisements.</strong></p>
 
-    <h2>6. Children</h2>
-    <p>Nestory is not directed at children under 13. We do not knowingly collect data from children under 13.</p>
+  <h2>5. Third-Party Services</h2>
+  <ul>
+    <li><strong>Firebase (Google)</strong> - Authentication and cloud database.<br>
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> &nbsp;&middot;&nbsp;
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+    </li>
+    <li><strong>RevenueCat</strong> - In-app subscription management. RevenueCat receives your App Store receipt to verify subscription status. They do not store payment card information.<br>
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>
+    </li>
+    <li><strong>Google AdMob</strong> - Banner ads shown to free users only.<br>
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+    </li>
+    <li><strong>Expo Notifications</strong> - Local and scheduled push notifications.<br>
+      <a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Privacy Policy</a>
+    </li>
+  </ul>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top will be revised when we do. Continued use of the app after changes means you accept the updated policy.</p>
+  <h2>6. Your Rights</h2>
+  <ul>
+    <li>You may request deletion of your account and all data by contacting us (see Section 10).</li>
+    <li>You can manage or leave a household in the app's Settings screen at any time.</li>
+    <li>You can update your preferences (language, currency, notifications) in the app at any time.</li>
+    <li>You can opt out of personalised ads through your device's privacy settings.</li>
+    <li>If you are in the European Economic Area (EEA), you have additional rights under the GDPR including rights to access, correct, restrict, or erase your personal data.</li>
+  </ul>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy or your data, you can open an issue or contact the maintainers via the Nestory app’s support or the repository: <a href="https://github.com/orkun51/Nestory_Privacy_Policy" target="_blank" rel="noopener">Nestory_Privacy_Policy</a>.</p>
+  <h2>7. Data Retention</h2>
+  <p>We retain your data for as long as your account is active. If you request account deletion, we will delete your personal data within 30 days, except where retention is required by law.</p>
 
-    <footer>
-      <p>© 2026 Nestory. All rights reserved.</p>
-    </footer>
-  </div>
+  <h2>8. Children</h2>
+  <p>Nestory is not directed at children under 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided personal data through the app, please contact us and we will delete it promptly.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we do, the "Last updated" date will be revised. Continued use of the app after changes constitutes your acceptance of the updated policy.</p>
+
+  <h2>10. Contact Us</h2>
+  <p>For questions, data requests, or account deletion requests, please contact us via the app's support channel or the repository: <a href="https://github.com/orkun51/Nestory_Privacy_Policy" target="_blank" rel="noopener">github.com/orkun51/Nestory_Privacy_Policy</a>.</p>
+
+  <footer>
+    <span>&copy; 2026 Nestory. All rights reserved.</span>
+    <a href="terms.html">Terms of Use</a>
+  </footer>
+</div>
 </body>
 </html>
